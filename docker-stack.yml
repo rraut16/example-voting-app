@@ -30,7 +30,7 @@ services:
     depends_on:
       - redis
     deploy:
-      replicas: 2
+      replicas: 3
       update_config:
         parallelism: 2
       restart_policy:
@@ -44,7 +44,7 @@ services:
     depends_on:
       - db
     deploy:
-      replicas: 1
+      replicas: 2
       update_config:
         parallelism: 2
         delay: 10s
